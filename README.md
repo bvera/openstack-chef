@@ -1,2 +1,3 @@
 # openstack-chef
-Lab environment for deploy openstack with chef in multinodes without chef-server
+Based on: https://github.com/openstack/openstack-chef   
+Lab environment for deploy openstack with chef in bare-metal multi-nodes without chef-server
