@@ -1,0 +1,200 @@
+DEPENDENCIES
+  openstack-bare-metal
+    git: https://git.openstack.org/openstack/cookbook-openstack-bare-metal
+    revision: 28d5e53fd73daf8951d7bc4600de15ad415baf5d
+  openstack-block-storage
+    git: https://git.openstack.org/openstack/cookbook-openstack-block-storage
+    revision: 90f09f5c937fb5c44b508a6c3ede29f8ad07ee8a
+  openstack-common
+    git: https://git.openstack.org/openstack/cookbook-openstack-common
+    revision: 97af7feec5b961f90d4895aa7ca0021ac53bd70d
+  openstack-compute
+    git: https://git.openstack.org/openstack/cookbook-openstack-compute
+    revision: d9446a64f22293adb152fb6ee6901e7f0c7ae970
+  openstack-dashboard
+    git: https://git.openstack.org/openstack/cookbook-openstack-dashboard
+    revision: d4779ba7cd0e9c80182f44f5b03fa22b72bf34aa
+  openstack-dns
+    git: https://git.openstack.org/openstack/cookbook-openstack-dns
+    revision: 0a8d77facc1577f6011c108470e1cb5fc824512d
+  openstack-identity
+    git: https://git.openstack.org/openstack/cookbook-openstack-identity
+    revision: d139297cf905d6eca5638baf52a37db1da24509d
+  openstack-image
+    git: https://git.openstack.org/openstack/cookbook-openstack-image
+    revision: 2d37f193e9d21a2a906da78e5cc76517ec2684cc
+  openstack-integration-test
+    git: https://git.openstack.org/openstack/cookbook-openstack-integration-test
+    revision: 5ad76e9754b7f96481ebe57079f1d616e7927149
+  openstack-network
+    git: https://git.openstack.org/openstack/cookbook-openstack-network
+    revision: f03e5c65fa70ec59f45840064a239af822abb070
+  openstack-ops-database
+    git: https://git.openstack.org/openstack/cookbook-openstack-ops-database
+    revision: 312401ff65c0c32c2b947c012c5ce2cd4b1e9e50
+  openstack-ops-messaging
+    git: https://git.openstack.org/openstack/cookbook-openstack-ops-messaging
+    revision: 4bbfe57c12484d8922076e42676cfdfe7721fce7
+  openstack-orchestration
+    git: https://git.openstack.org/openstack/cookbook-openstack-orchestration
+    revision: dd41637548dbb4bbdb114c81d7666bc692ef363f
+  openstack-telemetry
+    git: https://git.openstack.org/openstack/cookbook-openstack-telemetry
+    revision: 81ae2591897ba5f8b3345979e93059001d8facf0
+  openstackclient
+    git: https://git.openstack.org/openstack/cookbook-openstackclient
+    revision: 26bcde5a441419c50c6c8f1d1ed35657ffa072e4
+  statsd
+    git: https://github.com/librato/statsd-cookbook.git
+    revision: a4adcd0f2abf5515df116aa2ab56aa72a8403649
+
+GRAPH
+  apache2 (5.2.1)
+  apt (7.1.1)
+  ark (4.0.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  build-essential (8.2.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  docker (4.6.7)
+  dpkg_autostart (0.2.0)
+  erlang (7.0.0)
+    build-essential (>= 5.0)
+    yum-epel (>= 0.0.0)
+    yum-erlang_solutions (>= 1.0.3)
+  etcd (5.6.0)
+    docker (>= 0.0.0)
+  git (9.0.1)
+    build-essential (>= 5.0.0)
+  inifile_chef_gem (0.1.0)
+    build-essential (>= 0.0.0)
+  logrotate (2.2.0)
+  lvm (4.5.1)
+  mariadb (1.5.4)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    selinux_policy (~> 2.0)
+    yum (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+    yum-scl (>= 0.0.0)
+  memcached (4.1.0)
+    runit (>= 1.2.0)
+    yum-epel (>= 0.0.0)
+  mingw (2.1.0)
+    seven_zip (>= 0.0.0)
+  mysql (8.5.1)
+  mysql2_chef_gem (2.1.0)
+    build-essential (>= 2.4.0)
+    mariadb (>= 0.0.0)
+    mysql (>= 8.2.0)
+  nodejs (6.0.0)
+    ark (>= 2.0.2)
+    build-essential (>= 5.0)
+  openstack-bare-metal (18.0.0)
+    openstack-common (>= 18.0.0)
+    openstack-identity (>= 18.0.0)
+    openstack-image (>= 18.0.0)
+    openstack-network (>= 18.0.0)
+  openstack-block-storage (18.0.0)
+    lvm (>= 0.0.0)
+    openstack-common (>= 18.0.0)
+    openstack-identity (>= 18.0.0)
+    openstack-image (>= 18.0.0)
+    openstackclient (>= 0.0.0)
+    selinux (>= 0.0.0)
+  openstack-common (18.0.0)
+    etcd (~> 5.5)
+    mariadb (~> 1.5)
+    memcached (~> 4.1)
+    mysql (~> 8.2)
+    poise-python (~> 1.7)
+    selinux (>= 0.0.0)
+  openstack-compute (18.0.0)
+    openstack-common (>= 18.0.0)
+    openstack-identity (>= 18.0.0)
+    openstack-image (>= 18.0.0)
+    openstack-network (>= 18.0.0)
+    openstackclient (>= 0.0.0)
+  openstack-dashboard (18.0.0)
+    apache2 (>= 0.0.0)
+    openstack-common (>= 18.0.0)
+    openstack-identity (>= 18.0.0)
+    poise-python (>= 0.0.0)
+  openstack-dns (18.0.0)
+    openstack-common (>= 0.0.0)
+    openstack-identity (>= 0.0.0)
+    openstackclient (>= 0.0.0)
+  openstack-identity (18.0.0)
+    apache2 (>= 0.0.0)
+    openstack-common (>= 18.0.0)
+    openstackclient (>= 0.0.0)
+  openstack-image (18.0.0)
+    openstack-common (>= 18.0.0)
+    openstack-identity (>= 18.0.0)
+    openstackclient (>= 0.0.0)
+  openstack-integration-test (18.0.0)
+    openstack-block-storage (>= 18.0.0)
+    openstack-common (>= 18.0.0)
+    openstack-compute (>= 18.0.0)
+    openstack-identity (>= 18.0.0)
+    openstack-image (>= 18.0.0)
+    openstackclient (>= 0.0.0)
+    poise-python (>= 0.0.0)
+  openstack-network (18.0.0)
+    openstack-common (>= 18.0.0)
+    openstack-identity (>= 18.0.0)
+    openstackclient (>= 0.0.0)
+  openstack-ops-database (18.0.0)
+    mariadb (~> 1.5)
+    mysql (~> 8.2)
+    mysql2_chef_gem (~> 2.0)
+    openstack-common (>= 18.0.0)
+  openstack-ops-messaging (18.0.0)
+    openstack-common (>= 18.0.0)
+    rabbitmq (>= 0.0.0)
+  openstack-orchestration (18.0.0)
+    openstack-common (>= 18.0.0)
+    openstack-identity (>= 18.0.0)
+    openstackclient (>= 0.0.0)
+  openstack-telemetry (18.0.0)
+    apache2 (>= 0.0.0)
+    openstack-common (>= 18.0.0)
+    openstack-identity (>= 18.0.0)
+    openstackclient (>= 0.0.0)
+  openstackclient (18.0.0)
+  packagecloud (1.0.1)
+  poise (2.8.2)
+  poise-archive (1.5.0)
+    poise (~> 2.6)
+  poise-languages (2.1.2)
+    poise (~> 2.5)
+    poise-archive (~> 1.0)
+  poise-python (1.7.0)
+    poise (~> 2.7)
+    poise-languages (~> 2.0)
+  rabbitmq (5.6.1)
+    dpkg_autostart (>= 0.0.0)
+    erlang (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+    yum-erlang_solutions (>= 0.0.0)
+  runit (4.3.0)
+    packagecloud (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  selinux (2.1.1)
+  selinux_policy (2.1.0)
+  seven_zip (3.1.0)
+    windows (>= 0.0.0)
+  statsd (0.4.0)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+    nodejs (>= 0.5.2)
+  windows (5.1.4)
+  yum (5.1.0)
+  yum-epel (3.3.0)
+  yum-erlang_solutions (2.0.0)
+    yum-epel (>= 0.0.0)
+  yum-scl (0.2.0)
+    inifile_chef_gem (>= 0.0.0)
+    yum (>= 0.0.0)

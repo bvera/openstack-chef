@@ -1,0 +1,37 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Include:
+    - metadata.rb
+    - Gemfile
+    - attributes/**
+    - libraries/**
+    - providers/**
+    - recipes/**
+    - resources/**
+    - spec/**
+  Exclude:
+    - .cookbooks/**/*
+    - berks-cookbooks/**/*
+    - .bundle/**/*
+
+Encoding:
+  Exclude:
+    - metadata.rb
+    - Gemfile
+
+NumericLiterals:
+  Enabled: false
+
+LineLength:
+  Enabled: false
+
+WordArray:
+  MinSize: 3
+
+# TODO(galstom21)
+# The rescue exception statements in providers/**.rb need to be modified,
+# to rescue specific exceptions.
+RescueException:
+  Exclude:
+    - providers/register.rb

@@ -1,0 +1,7 @@
+Style/IdenticalConditionalBranches:
+  Exclude:
+    - 'resources/repo.rb'
+
+Style/SingleLineBlockParams:
+  Exclude:
+    - 'resources/repo.rb'
